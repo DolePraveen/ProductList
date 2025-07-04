@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict/>
+	</array>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need access to save photos to your library.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs camera access to take photos of your food.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app needs micro phone access to take speck of your food.</string>
+    
+    <key>UIFileSharingEnabled</key>
+    <true/>
+
+    
+</dict>
+</plist>
