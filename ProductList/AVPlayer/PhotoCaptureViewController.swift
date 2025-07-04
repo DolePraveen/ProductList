@@ -11,6 +11,11 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
         setupCamera()
     }
 
+    func capturePhotoNow() {
+        let settings = AVCapturePhotoSettings()
+        photoOutput.capturePhoto(with: settings, delegate: self)
+    }
+
     private func setupCamera() {
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = .photo
@@ -35,10 +40,6 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
         captureSession.startRunning()
     }
 
-    func capturePhotoNow() {
-        let settings = AVCapturePhotoSettings()
-        photoOutput.capturePhoto(with: settings, delegate: self)
-    }
 
     func photoOutput(_ output: AVCapturePhotoOutput,
                      didFinishProcessingPhoto photo: AVCapturePhoto,
@@ -49,7 +50,6 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
             return
         }
 
-        // Save to photo library
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         print("Photo captured and saved.")
     }
