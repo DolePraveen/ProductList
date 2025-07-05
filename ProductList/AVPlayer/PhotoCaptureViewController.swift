@@ -6,6 +6,18 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     var photoOutput: AVCapturePhotoOutput!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
+    func name() {
+       
+    }
+    
+    func fullName() {
+        
+    }
+    
+    func testName() {
+        
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCamera()
