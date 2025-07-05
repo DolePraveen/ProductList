@@ -9,6 +9,7 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCamera()
+        print("viewDidLoad")
     }
 
     private func setupCamera() {
