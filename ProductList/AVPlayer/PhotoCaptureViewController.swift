@@ -11,7 +11,7 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     }
     
     func fullName() {
-        
+        print("fullName")
     }
     
     func testName() {
