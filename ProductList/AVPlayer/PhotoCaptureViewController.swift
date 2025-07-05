@@ -7,7 +7,7 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     var previewLayer: AVCaptureVideoPreviewLayer!
 
     func name() {
-       
+       print("Name")
     }
     
     func fullName() {
