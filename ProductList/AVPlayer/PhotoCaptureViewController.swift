@@ -40,7 +40,18 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
         captureSession.startRunning()
     }
 
-
+    func testOne() {
+        
+    }
+    
+    func testTwo() {
+        
+    }
+    
+    func testThree() {
+        
+    }
+    
     func photoOutput(_ output: AVCapturePhotoOutput,
                      didFinishProcessingPhoto photo: AVCapturePhoto,
                      error: Error?) {
