@@ -15,7 +15,7 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     }
     
     func testName() {
-        
+        print("testName")
     }
 
     override func viewDidLoad() {
