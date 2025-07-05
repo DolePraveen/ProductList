@@ -36,7 +36,6 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
         previewLayer.frame = view.bounds
         previewLayer.videoGravity = .resizeAspectFill
         view.layer.insertSublayer(previewLayer, at: 0)
-        print("DP_Marge")
         captureSession.startRunning()
     }
 
