@@ -6,6 +6,18 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
     var photoOutput: AVCapturePhotoOutput!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
+    func name() {
+       
+    }
+    
+    func fullName() {
+        
+    }
+    
+    func testName() {
+        
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCamera()
@@ -36,7 +48,6 @@ class PhotoCaptureViewController: UIViewController, AVCapturePhotoCaptureDelegat
         previewLayer.frame = view.bounds
         previewLayer.videoGravity = .resizeAspectFill
         view.layer.insertSublayer(previewLayer, at: 0)
-        print("DP_NewMarge")
         captureSession.startRunning()
     }
 
